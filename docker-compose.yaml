@@ -1,0 +1,7 @@
+version: "3"
+services:
+  logger:
+    command: python main.py
+    build: .
+    volumes:
+      - ./:/usr/src/app
