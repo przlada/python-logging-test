@@ -22,7 +22,8 @@ def error_function():
     raise Exception('Error info')
 
 while True:
-    logger.info('Logger info msg')
+    logger.info('Logger info msg '+str(datetime.datetime.now()))
+    logger.debug('Logger info debug '+str(datetime.datetime.now()))
     try:
         error_function()
     except:
